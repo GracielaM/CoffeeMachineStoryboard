@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A47D224184617310075A865 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A47D223184617310075A865 /* Foundation.framework */; };
+		5A47D226184617310075A865 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A47D225184617310075A865 /* CoreGraphics.framework */; };
+		5A47D228184617310075A865 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A47D227184617310075A865 /* UIKit.framework */; };
+		5A47D22E184617320075A865 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5A47D22C184617320075A865 /* InfoPlist.strings */; };
+		5A47D230184617320075A865 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A47D22F184617320075A865 /* main.m */; };
+		5A47D234184617320075A865 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A47D233184617320075A865 /* AppDelegate.m */; };
+		5A47D23C184617320075A865 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A47D23B184617320075A865 /* Images.xcassets */; };
+		5A47D243184617320075A865 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A47D242184617320075A865 /* XCTest.framework */; };
+		5A47D244184617330075A865 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A47D223184617310075A865 /* Foundation.framework */; };
+		5A47D245184617330075A865 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A47D227184617310075A865 /* UIKit.framework */; };
+		5A47D24D184617330075A865 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5A47D24B184617330075A865 /* InfoPlist.strings */; };
+		5A47D24F184617330075A865 /* CoffeeMachineStoryboardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A47D24E184617330075A865 /* CoffeeMachineStoryboardTests.m */; };
+		5A47D268184618620075A865 /* CoffeeMachineState.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A47D25A184618620075A865 /* CoffeeMachineState.m */; };
+		5A47D269184618620075A865 /* Coin.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A47D25C184618620075A865 /* Coin.m */; };
+		5A47D26A184618620075A865 /* Drink.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A47D25E184618620075A865 /* Drink.m */; };
+		5A47D26B184618620075A865 /* DrinksContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A47D260184618620075A865 /* DrinksContainer.m */; };
+		5A47D26C184618620075A865 /* FileReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A47D262184618620075A865 /* FileReader.m */; };
+		5A47D26D184618620075A865 /* MoneyAmount.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A47D264184618620075A865 /* MoneyAmount.m */; };
+		5A47D26E184618620075A865 /* sourceData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A47D265184618620075A865 /* sourceData.plist */; };
+		5A47D26F184618620075A865 /* Withdraw.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A47D267184618620075A865 /* Withdraw.m */; };
+		5A47D272184619230075A865 /* SoundPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A47D271184619230075A865 /* SoundPlayer.m */; };
+		5A47D275184619570075A865 /* Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A47D274184619570075A865 /* Theme.m */; };
+		5A47D27818461A260075A865 /* InsufficientAmountFlow.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A47D27718461A260075A865 /* InsufficientAmountFlow.m */; };
+		5A47D33018461B300075A865 /* AdministrationFlow.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A47D2E118461B300075A865 /* AdministrationFlow.m */; };
+		5A47D33118461B300075A865 /* OrderFinalizeFlow.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A47D2E318461B300075A865 /* OrderFinalizeFlow.m */; };
+		5A47D33218461B300075A865 /* PaymentFlow.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A47D2E518461B300075A865 /* PaymentFlow.m */; };
+		5A47D33318461B300075A865 /* DrinksTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A47D2E718461B300075A865 /* DrinksTableView.m */; };
+		5A47D33918461F080075A865 /* FileWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A47D33818461F080075A865 /* FileWriter.m */; };
+		5A47D33C184784990075A865 /* coffee-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A47D33A184784990075A865 /* coffee-back.png */; };
+		5A47D33D184784990075A865 /* kafe-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A47D33B184784990075A865 /* kafe-1.png */; };
+		5A47D340184787FC0075A865 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A47D33E184787FC0075A865 /* back.png */; };
+		5A47D341184787FC0075A865 /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A47D33F184787FC0075A865 /* back@2x.png */; };
+		5ADB95E71848A1D90000300C /* backImg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5ADB95E61848A1D90000300C /* backImg.jpg */; };
+		5ADB95F01848A2960000300C /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADB95E81848A2960000300C /* 5.png */; };
+		5ADB95F11848A2960000300C /* 5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADB95E91848A2960000300C /* 5@2x.png */; };
+		5ADB95F21848A2960000300C /* 10.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADB95EA1848A2960000300C /* 10.png */; };
+		5ADB95F31848A2960000300C /* 10@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADB95EB1848A2960000300C /* 10@2x.png */; };
+		5ADB95F41848A2960000300C /* 20.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADB95EC1848A2960000300C /* 20.png */; };
+		5ADB95F51848A2960000300C /* 20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADB95ED1848A2960000300C /* 20@2x.png */; };
+		5ADB95F61848A2960000300C /* 50.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADB95EE1848A2960000300C /* 50.png */; };
+		5ADB95F71848A2960000300C /* 50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADB95EF1848A2960000300C /* 50@2x.png */; };
+		5ADB95FA1848A3B50000300C /* lev.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADB95F81848A3B50000300C /* lev.png */; };
+		5ADB95FB1848A3B50000300C /* lev@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADB95F91848A3B50000300C /* lev@2x.png */; };
+		5ADB95FD1848D4100000300C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ADB95FC1848D4100000300C /* Main.storyboard */; };
+		5ADB95FF1848D70C0000300C /* slot.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADB95FE1848D70C0000300C /* slot.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5A47D246184617330075A865 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A47D218184617310075A865 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A47D21F184617310075A865;
+			remoteInfo = CoffeeMachineStoryboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5A47D220184617310075A865 /* CoffeeMachineStoryboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeMachineStoryboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A47D223184617310075A865 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5A47D225184617310075A865 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5A47D227184617310075A865 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5A47D22B184617320075A865 /* CoffeeMachineStoryboard-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoffeeMachineStoryboard-Info.plist"; sourceTree = "<group>"; };
+		5A47D22D184617320075A865 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5A47D22F184617320075A865 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5A47D231184617320075A865 /* CoffeeMachineStoryboard-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoffeeMachineStoryboard-Prefix.pch"; sourceTree = "<group>"; };
+		5A47D232184617320075A865 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5A47D233184617320075A865 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5A47D23B184617320075A865 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5A47D241184617320075A865 /* CoffeeMachineStoryboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoffeeMachineStoryboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A47D242184617320075A865 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		5A47D24A184617330075A865 /* CoffeeMachineStoryboardTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoffeeMachineStoryboardTests-Info.plist"; sourceTree = "<group>"; };
+		5A47D24C184617330075A865 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5A47D24E184617330075A865 /* CoffeeMachineStoryboardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoffeeMachineStoryboardTests.m; sourceTree = "<group>"; };
+		5A47D259184618620075A865 /* CoffeeMachineState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoffeeMachineState.h; sourceTree = "<group>"; };
+		5A47D25A184618620075A865 /* CoffeeMachineState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoffeeMachineState.m; sourceTree = "<group>"; };
+		5A47D25B184618620075A865 /* Coin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Coin.h; sourceTree = "<group>"; };
+		5A47D25C184618620075A865 /* Coin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Coin.m; sourceTree = "<group>"; };
+		5A47D25D184618620075A865 /* Drink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Drink.h; sourceTree = "<group>"; };
+		5A47D25E184618620075A865 /* Drink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Drink.m; sourceTree = "<group>"; };
+		5A47D25F184618620075A865 /* DrinksContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrinksContainer.h; sourceTree = "<group>"; };
+		5A47D260184618620075A865 /* DrinksContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrinksContainer.m; sourceTree = "<group>"; };
+		5A47D261184618620075A865 /* FileReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileReader.h; sourceTree = "<group>"; };
+		5A47D262184618620075A865 /* FileReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileReader.m; sourceTree = "<group>"; };
+		5A47D263184618620075A865 /* MoneyAmount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoneyAmount.h; sourceTree = "<group>"; };
+		5A47D264184618620075A865 /* MoneyAmount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoneyAmount.m; sourceTree = "<group>"; };
+		5A47D265184618620075A865 /* sourceData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sourceData.plist; sourceTree = "<group>"; };
+		5A47D266184618620075A865 /* Withdraw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Withdraw.h; sourceTree = "<group>"; };
+		5A47D267184618620075A865 /* Withdraw.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Withdraw.m; sourceTree = "<group>"; };
+		5A47D270184619230075A865 /* SoundPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundPlayer.h; sourceTree = "<group>"; };
+		5A47D271184619230075A865 /* SoundPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundPlayer.m; sourceTree = "<group>"; };
+		5A47D273184619570075A865 /* Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Theme.h; sourceTree = "<group>"; };
+		5A47D274184619570075A865 /* Theme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Theme.m; sourceTree = "<group>"; };
+		5A47D27618461A260075A865 /* InsufficientAmountFlow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InsufficientAmountFlow.h; sourceTree = "<group>"; };
+		5A47D27718461A260075A865 /* InsufficientAmountFlow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InsufficientAmountFlow.m; sourceTree = "<group>"; };
+		5A47D2E018461B300075A865 /* AdministrationFlow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AdministrationFlow.h; path = ../AdministrationFlow.h; sourceTree = "<group>"; };
+		5A47D2E118461B300075A865 /* AdministrationFlow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AdministrationFlow.m; path = ../AdministrationFlow.m; sourceTree = "<group>"; };
+		5A47D2E218461B300075A865 /* OrderFinalizeFlow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OrderFinalizeFlow.h; path = ../OrderFinalizeFlow.h; sourceTree = "<group>"; };
+		5A47D2E318461B300075A865 /* OrderFinalizeFlow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OrderFinalizeFlow.m; path = ../OrderFinalizeFlow.m; sourceTree = "<group>"; };
+		5A47D2E418461B300075A865 /* PaymentFlow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaymentFlow.h; path = ../PaymentFlow.h; sourceTree = "<group>"; };
+		5A47D2E518461B300075A865 /* PaymentFlow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaymentFlow.m; path = ../PaymentFlow.m; sourceTree = "<group>"; };
+		5A47D2E618461B300075A865 /* DrinksTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DrinksTableView.h; path = ../DrinksTableView.h; sourceTree = "<group>"; };
+		5A47D2E718461B300075A865 /* DrinksTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DrinksTableView.m; path = ../DrinksTableView.m; sourceTree = "<group>"; };
+		5A47D33718461F080075A865 /* FileWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileWriter.h; sourceTree = "<group>"; };
+		5A47D33818461F080075A865 /* FileWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileWriter.m; sourceTree = "<group>"; };
+		5A47D33A184784990075A865 /* coffee-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "coffee-back.png"; sourceTree = "<group>"; };
+		5A47D33B184784990075A865 /* kafe-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kafe-1.png"; sourceTree = "<group>"; };
+		5A47D33E184787FC0075A865 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		5A47D33F184787FC0075A865 /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
+		5ADB95E61848A1D90000300C /* backImg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = backImg.jpg; sourceTree = "<group>"; };
+		5ADB95E81848A2960000300C /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
+		5ADB95E91848A2960000300C /* 5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "5@2x.png"; sourceTree = "<group>"; };
+		5ADB95EA1848A2960000300C /* 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 10.png; sourceTree = "<group>"; };
+		5ADB95EB1848A2960000300C /* 10@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "10@2x.png"; sourceTree = "<group>"; };
+		5ADB95EC1848A2960000300C /* 20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 20.png; sourceTree = "<group>"; };
+		5ADB95ED1848A2960000300C /* 20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "20@2x.png"; sourceTree = "<group>"; };
+		5ADB95EE1848A2960000300C /* 50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 50.png; sourceTree = "<group>"; };
+		5ADB95EF1848A2960000300C /* 50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "50@2x.png"; sourceTree = "<group>"; };
+		5ADB95F81848A3B50000300C /* lev.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lev.png; sourceTree = "<group>"; };
+		5ADB95F91848A3B50000300C /* lev@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lev@2x.png"; sourceTree = "<group>"; };
+		5ADB95FC1848D4100000300C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../Main.storyboard; sourceTree = "<group>"; };
+		5ADB95FE1848D70C0000300C /* slot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slot.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5A47D21D184617310075A865 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A47D226184617310075A865 /* CoreGraphics.framework in Frameworks */,
+				5A47D228184617310075A865 /* UIKit.framework in Frameworks */,
+				5A47D224184617310075A865 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A47D23E184617320075A865 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A47D243184617320075A865 /* XCTest.framework in Frameworks */,
+				5A47D245184617330075A865 /* UIKit.framework in Frameworks */,
+				5A47D244184617330075A865 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A47D217184617310075A865 = {
+			isa = PBXGroup;
+			children = (
+				5A47D229184617310075A865 /* CoffeeMachineStoryboard */,
+				5A47D248184617330075A865 /* CoffeeMachineStoryboardTests */,
+				5A47D222184617310075A865 /* Frameworks */,
+				5A47D221184617310075A865 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5A47D221184617310075A865 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5A47D220184617310075A865 /* CoffeeMachineStoryboard.app */,
+				5A47D241184617320075A865 /* CoffeeMachineStoryboardTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A47D222184617310075A865 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A47D223184617310075A865 /* Foundation.framework */,
+				5A47D225184617310075A865 /* CoreGraphics.framework */,
+				5A47D227184617310075A865 /* UIKit.framework */,
+				5A47D242184617320075A865 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5A47D229184617310075A865 /* CoffeeMachineStoryboard */ = {
+			isa = PBXGroup;
+			children = (
+				5A47D258184617FE0075A865 /* Model */,
+				5A47D2E618461B300075A865 /* DrinksTableView.h */,
+				5A47D2E718461B300075A865 /* DrinksTableView.m */,
+				5A47D2E418461B300075A865 /* PaymentFlow.h */,
+				5A47D2E518461B300075A865 /* PaymentFlow.m */,
+				5A47D2E318461B300075A865 /* OrderFinalizeFlow.m */,
+				5A47D2E218461B300075A865 /* OrderFinalizeFlow.h */,
+				5A47D2E118461B300075A865 /* AdministrationFlow.m */,
+				5A47D2E018461B300075A865 /* AdministrationFlow.h */,
+				5A47D232184617320075A865 /* AppDelegate.h */,
+				5A47D233184617320075A865 /* AppDelegate.m */,
+				5ADB95FC1848D4100000300C /* Main.storyboard */,
+				5A47D27618461A260075A865 /* InsufficientAmountFlow.h */,
+				5A47D27718461A260075A865 /* InsufficientAmountFlow.m */,
+				5A47D270184619230075A865 /* SoundPlayer.h */,
+				5A47D271184619230075A865 /* SoundPlayer.m */,
+				5A47D273184619570075A865 /* Theme.h */,
+				5A47D274184619570075A865 /* Theme.m */,
+				5A47D23B184617320075A865 /* Images.xcassets */,
+				5A47D22A184617320075A865 /* Supporting Files */,
+			);
+			path = CoffeeMachineStoryboard;
+			sourceTree = "<group>";
+		};
+		5A47D22A184617320075A865 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5ADB95FE1848D70C0000300C /* slot.png */,
+				5ADB95F81848A3B50000300C /* lev.png */,
+				5ADB95F91848A3B50000300C /* lev@2x.png */,
+				5ADB95E81848A2960000300C /* 5.png */,
+				5ADB95E91848A2960000300C /* 5@2x.png */,
+				5ADB95EA1848A2960000300C /* 10.png */,
+				5ADB95EB1848A2960000300C /* 10@2x.png */,
+				5ADB95EC1848A2960000300C /* 20.png */,
+				5ADB95ED1848A2960000300C /* 20@2x.png */,
+				5ADB95EE1848A2960000300C /* 50.png */,
+				5ADB95EF1848A2960000300C /* 50@2x.png */,
+				5ADB95E61848A1D90000300C /* backImg.jpg */,
+				5A47D33E184787FC0075A865 /* back.png */,
+				5A47D33F184787FC0075A865 /* back@2x.png */,
+				5A47D33A184784990075A865 /* coffee-back.png */,
+				5A47D33B184784990075A865 /* kafe-1.png */,
+				5A47D22B184617320075A865 /* CoffeeMachineStoryboard-Info.plist */,
+				5A47D22C184617320075A865 /* InfoPlist.strings */,
+				5A47D22F184617320075A865 /* main.m */,
+				5A47D231184617320075A865 /* CoffeeMachineStoryboard-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5A47D248184617330075A865 /* CoffeeMachineStoryboardTests */ = {
+			isa = PBXGroup;
+			children = (
+				5A47D24E184617330075A865 /* CoffeeMachineStoryboardTests.m */,
+				5A47D249184617330075A865 /* Supporting Files */,
+			);
+			path = CoffeeMachineStoryboardTests;
+			sourceTree = "<group>";
+		};
+		5A47D249184617330075A865 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5A47D24A184617330075A865 /* CoffeeMachineStoryboardTests-Info.plist */,
+				5A47D24B184617330075A865 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5A47D258184617FE0075A865 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5A47D33718461F080075A865 /* FileWriter.h */,
+				5A47D33818461F080075A865 /* FileWriter.m */,
+				5A47D259184618620075A865 /* CoffeeMachineState.h */,
+				5A47D25A184618620075A865 /* CoffeeMachineState.m */,
+				5A47D25B184618620075A865 /* Coin.h */,
+				5A47D25C184618620075A865 /* Coin.m */,
+				5A47D25D184618620075A865 /* Drink.h */,
+				5A47D25E184618620075A865 /* Drink.m */,
+				5A47D25F184618620075A865 /* DrinksContainer.h */,
+				5A47D260184618620075A865 /* DrinksContainer.m */,
+				5A47D261184618620075A865 /* FileReader.h */,
+				5A47D262184618620075A865 /* FileReader.m */,
+				5A47D263184618620075A865 /* MoneyAmount.h */,
+				5A47D264184618620075A865 /* MoneyAmount.m */,
+				5A47D265184618620075A865 /* sourceData.plist */,
+				5A47D266184618620075A865 /* Withdraw.h */,
+				5A47D267184618620075A865 /* Withdraw.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5A47D21F184617310075A865 /* CoffeeMachineStoryboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A47D252184617330075A865 /* Build configuration list for PBXNativeTarget "CoffeeMachineStoryboard" */;
+			buildPhases = (
+				5A47D21C184617310075A865 /* Sources */,
+				5A47D21D184617310075A865 /* Frameworks */,
+				5A47D21E184617310075A865 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoffeeMachineStoryboard;
+			productName = CoffeeMachineStoryboard;
+			productReference = 5A47D220184617310075A865 /* CoffeeMachineStoryboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5A47D240184617320075A865 /* CoffeeMachineStoryboardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A47D255184617330075A865 /* Build configuration list for PBXNativeTarget "CoffeeMachineStoryboardTests" */;
+			buildPhases = (
+				5A47D23D184617320075A865 /* Sources */,
+				5A47D23E184617320075A865 /* Frameworks */,
+				5A47D23F184617320075A865 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A47D247184617330075A865 /* PBXTargetDependency */,
+			);
+			name = CoffeeMachineStoryboardTests;
+			productName = CoffeeMachineStoryboardTests;
+			productReference = 5A47D241184617320075A865 /* CoffeeMachineStoryboardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5A47D218184617310075A865 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = graci;
+				TargetAttributes = {
+					5A47D240184617320075A865 = {
+						TestTargetID = 5A47D21F184617310075A865;
+					};
+				};
+			};
+			buildConfigurationList = 5A47D21B184617310075A865 /* Build configuration list for PBXProject "CoffeeMachineStoryboard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5A47D217184617310075A865;
+			productRefGroup = 5A47D221184617310075A865 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A47D21F184617310075A865 /* CoffeeMachineStoryboard */,
+				5A47D240184617320075A865 /* CoffeeMachineStoryboardTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5A47D21E184617310075A865 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A47D23C184617320075A865 /* Images.xcassets in Resources */,
+				5ADB95FF1848D70C0000300C /* slot.png in Resources */,
+				5ADB95F01848A2960000300C /* 5.png in Resources */,
+				5ADB95F21848A2960000300C /* 10.png in Resources */,
+				5ADB95FA1848A3B50000300C /* lev.png in Resources */,
+				5A47D341184787FC0075A865 /* back@2x.png in Resources */,
+				5ADB95F71848A2960000300C /* 50@2x.png in Resources */,
+				5A47D33C184784990075A865 /* coffee-back.png in Resources */,
+				5A47D26E184618620075A865 /* sourceData.plist in Resources */,
+				5A47D22E184617320075A865 /* InfoPlist.strings in Resources */,
+				5ADB95F41848A2960000300C /* 20.png in Resources */,
+				5ADB95F31848A2960000300C /* 10@2x.png in Resources */,
+				5ADB95FD1848D4100000300C /* Main.storyboard in Resources */,
+				5ADB95E71848A1D90000300C /* backImg.jpg in Resources */,
+				5ADB95FB1848A3B50000300C /* lev@2x.png in Resources */,
+				5A47D340184787FC0075A865 /* back.png in Resources */,
+				5A47D33D184784990075A865 /* kafe-1.png in Resources */,
+				5ADB95F51848A2960000300C /* 20@2x.png in Resources */,
+				5ADB95F61848A2960000300C /* 50.png in Resources */,
+				5ADB95F11848A2960000300C /* 5@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A47D23F184617320075A865 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A47D24D184617330075A865 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A47D21C184617310075A865 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A47D33318461B300075A865 /* DrinksTableView.m in Sources */,
+				5A47D33918461F080075A865 /* FileWriter.m in Sources */,
+				5A47D272184619230075A865 /* SoundPlayer.m in Sources */,
+				5A47D26A184618620075A865 /* Drink.m in Sources */,
+				5A47D269184618620075A865 /* Coin.m in Sources */,
+				5A47D27818461A260075A865 /* InsufficientAmountFlow.m in Sources */,
+				5A47D33218461B300075A865 /* PaymentFlow.m in Sources */,
+				5A47D26C184618620075A865 /* FileReader.m in Sources */,
+				5A47D268184618620075A865 /* CoffeeMachineState.m in Sources */,
+				5A47D26F184618620075A865 /* Withdraw.m in Sources */,
+				5A47D234184617320075A865 /* AppDelegate.m in Sources */,
+				5A47D33118461B300075A865 /* OrderFinalizeFlow.m in Sources */,
+				5A47D230184617320075A865 /* main.m in Sources */,
+				5A47D275184619570075A865 /* Theme.m in Sources */,
+				5A47D26B184618620075A865 /* DrinksContainer.m in Sources */,
+				5A47D33018461B300075A865 /* AdministrationFlow.m in Sources */,
+				5A47D26D184618620075A865 /* MoneyAmount.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A47D23D184617320075A865 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A47D24F184617330075A865 /* CoffeeMachineStoryboardTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5A47D247184617330075A865 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A47D21F184617310075A865 /* CoffeeMachineStoryboard */;
+			targetProxy = 5A47D246184617330075A865 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5A47D22C184617320075A865 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A47D22D184617320075A865 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5A47D24B184617330075A865 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A47D24C184617330075A865 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5A47D250184617330075A865 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5A47D251184617330075A865 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5A47D253184617330075A865 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoffeeMachineStoryboard/CoffeeMachineStoryboard-Prefix.pch";
+				INFOPLIST_FILE = "CoffeeMachineStoryboard/CoffeeMachineStoryboard-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5A47D254184617330075A865 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoffeeMachineStoryboard/CoffeeMachineStoryboard-Prefix.pch";
+				INFOPLIST_FILE = "CoffeeMachineStoryboard/CoffeeMachineStoryboard-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5A47D256184617330075A865 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CoffeeMachineStoryboard.app/CoffeeMachineStoryboard";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoffeeMachineStoryboard/CoffeeMachineStoryboard-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CoffeeMachineStoryboardTests/CoffeeMachineStoryboardTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		5A47D257184617330075A865 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CoffeeMachineStoryboard.app/CoffeeMachineStoryboard";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoffeeMachineStoryboard/CoffeeMachineStoryboard-Prefix.pch";
+				INFOPLIST_FILE = "CoffeeMachineStoryboardTests/CoffeeMachineStoryboardTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5A47D21B184617310075A865 /* Build configuration list for PBXProject "CoffeeMachineStoryboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A47D250184617330075A865 /* Debug */,
+				5A47D251184617330075A865 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A47D252184617330075A865 /* Build configuration list for PBXNativeTarget "CoffeeMachineStoryboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A47D253184617330075A865 /* Debug */,
+				5A47D254184617330075A865 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A47D255184617330075A865 /* Build configuration list for PBXNativeTarget "CoffeeMachineStoryboardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A47D256184617330075A865 /* Debug */,
+				5A47D257184617330075A865 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5A47D218184617310075A865 /* Project object */;
+}
