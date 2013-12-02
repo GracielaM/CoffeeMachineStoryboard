@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="fsz-8Z-Cot">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="fsz-8Z-Cot">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
         <!--Drinks Table View-->
@@ -127,7 +127,7 @@
                                 <rect key="frame" x="0.0" y="66" width="320" height="556"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="5.png" translatesAutoresizingMaskIntoConstraints="NO" id="lxu-ed-wYN">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="5.png" translatesAutoresizingMaskIntoConstraints="NO" id="lxu-ed-wYN">
                                 <rect key="frame" x="10" y="76" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
@@ -135,7 +135,7 @@
                                     <outletCollection property="gestureRecognizers" destination="JKe-dM-JWJ" appends="YES" id="jBo-et-fRj"/>
                                 </connections>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="50.png" translatesAutoresizingMaskIntoConstraints="NO" id="YvP-dH-W1c">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="50.png" translatesAutoresizingMaskIntoConstraints="NO" id="YvP-dH-W1c">
                                 <rect key="frame" x="61" y="167" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
@@ -143,7 +143,7 @@
                                     <outletCollection property="gestureRecognizers" destination="pYn-VJ-gid" appends="YES" id="ZOl-15-hjt"/>
                                 </connections>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lev.png" translatesAutoresizingMaskIntoConstraints="NO" id="YWV-Xp-TdP">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lev.png" translatesAutoresizingMaskIntoConstraints="NO" id="YWV-Xp-TdP">
                                 <rect key="frame" x="180" y="167" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
@@ -151,7 +151,7 @@
                                     <outletCollection property="gestureRecognizers" destination="mx3-jC-XnN" appends="YES" id="Su2-RQ-UXA"/>
                                 </connections>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="20.png" translatesAutoresizingMaskIntoConstraints="NO" id="3FG-Rc-A1e">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="20.png" translatesAutoresizingMaskIntoConstraints="NO" id="3FG-Rc-A1e">
                                 <rect key="frame" x="230" y="76" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
@@ -159,7 +159,7 @@
                                     <outletCollection property="gestureRecognizers" destination="RIw-RG-O3T" appends="YES" id="cEd-o6-BD1"/>
                                 </connections>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="10.png" translatesAutoresizingMaskIntoConstraints="NO" id="2Qr-CB-9fy">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="10.png" translatesAutoresizingMaskIntoConstraints="NO" id="2Qr-CB-9fy">
                                 <rect key="frame" x="125" y="76" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
@@ -168,18 +168,18 @@
                                 </connections>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="slot.png" translatesAutoresizingMaskIntoConstraints="NO" id="7I3-M0-aNJ">
-                                <rect key="frame" x="210" y="434" width="110" height="128"/>
+                                <rect key="frame" x="210" y="369" width="110" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p2X-uA-e7d">
-                                <rect key="frame" x="61" y="511" width="42" height="21"/>
+                                <rect key="frame" x="56" y="454" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="23p-DR-IBE">
-                                <rect key="frame" x="61" y="447" width="42" height="21"/>
+                                <rect key="frame" x="56" y="394" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
