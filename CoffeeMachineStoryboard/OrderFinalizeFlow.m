@@ -87,8 +87,8 @@
     [UIView commitAnimations];
     [UIView beginAnimations:nil context:NULL];
     [UIView setAnimationDelay:0.375];
-    //[self.navigationController popToRootViewControllerAnimated:NO];
-    [self performSegueWithIdentifier:@"FinalizeToDrinksView" sender:self];
+    [self.navigationController popToRootViewControllerAnimated:NO];
+    //[self performSegueWithIdentifier:@"FinalizeToDrinksView" sender:self];
     [UIView commitAnimations];
 }
 

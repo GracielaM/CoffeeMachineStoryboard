@@ -50,8 +50,8 @@
 		5ADB95F71848A2960000300C /* 50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADB95EF1848A2960000300C /* 50@2x.png */; };
 		5ADB95FA1848A3B50000300C /* lev.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADB95F81848A3B50000300C /* lev.png */; };
 		5ADB95FB1848A3B50000300C /* lev@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADB95F91848A3B50000300C /* lev@2x.png */; };
-		5ADB95FD1848D4100000300C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ADB95FC1848D4100000300C /* Main.storyboard */; };
 		5ADB95FF1848D70C0000300C /* slot.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADB95FE1848D70C0000300C /* slot.png */; };
+		5AFB2F4B184F71F700AD281E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AFB2F4A184F71F700AD281E /* Main.storyboard */; };
 		68A44A92184F24C00076A5DC /* readyDrinImg1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 68A44A91184F24C00076A5DC /* readyDrinImg1.jpg */; };
 		68A44A94184F25150076A5DC /* yourChange.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A44A93184F25150076A5DC /* yourChange.png */; };
 		68C63BAC184CC2B200E6C63C /* dropCoin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 68C63BAB184CC2B200E6C63C /* dropCoin.mp3 */; };
@@ -131,8 +131,8 @@
 		5ADB95EF1848A2960000300C /* 50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "50@2x.png"; sourceTree = "<group>"; };
 		5ADB95F81848A3B50000300C /* lev.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lev.png; sourceTree = "<group>"; };
 		5ADB95F91848A3B50000300C /* lev@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lev@2x.png"; sourceTree = "<group>"; };
-		5ADB95FC1848D4100000300C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../Main.storyboard; sourceTree = "<group>"; };
 		5ADB95FE1848D70C0000300C /* slot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slot.png; sourceTree = "<group>"; };
+		5AFB2F4A184F71F700AD281E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		68A44A91184F24C00076A5DC /* readyDrinImg1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = readyDrinImg1.jpg; sourceTree = "<group>"; };
 		68A44A93184F25150076A5DC /* yourChange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yourChange.png; sourceTree = "<group>"; };
 		68C63BAB184CC2B200E6C63C /* dropCoin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dropCoin.mp3; sourceTree = "<group>"; };
@@ -203,11 +203,11 @@
 				5A47D2E518461B300075A865 /* PaymentFlow.m */,
 				5A47D2E318461B300075A865 /* OrderFinalizeFlow.m */,
 				5A47D2E218461B300075A865 /* OrderFinalizeFlow.h */,
+				5AFB2F4A184F71F700AD281E /* Main.storyboard */,
 				5A47D2E118461B300075A865 /* AdministrationFlow.m */,
 				5A47D2E018461B300075A865 /* AdministrationFlow.h */,
 				5A47D232184617320075A865 /* AppDelegate.h */,
 				5A47D233184617320075A865 /* AppDelegate.m */,
-				5ADB95FC1848D4100000300C /* Main.storyboard */,
 				5A47D27618461A260075A865 /* InsufficientAmountFlow.h */,
 				5A47D27718461A260075A865 /* InsufficientAmountFlow.m */,
 				5A47D270184619230075A865 /* SoundPlayer.h */,
@@ -370,6 +370,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A47D23C184617320075A865 /* Images.xcassets in Resources */,
+				5AFB2F4B184F71F700AD281E /* Main.storyboard in Resources */,
 				5ADB95FF1848D70C0000300C /* slot.png in Resources */,
 				68C63C60184CC32B00E6C63C /* coinBack.mp3 in Resources */,
 				5ADB95F01848A2960000300C /* 5.png in Resources */,
@@ -384,7 +385,6 @@
 				5A47D22E184617320075A865 /* InfoPlist.strings in Resources */,
 				5ADB95F41848A2960000300C /* 20.png in Resources */,
 				5ADB95F31848A2960000300C /* 10@2x.png in Resources */,
-				5ADB95FD1848D4100000300C /* Main.storyboard in Resources */,
 				68C63BAC184CC2B200E6C63C /* dropCoin.mp3 in Resources */,
 				5ADB95E71848A1D90000300C /* backImg.jpg in Resources */,
 				5ADB95FB1848A3B50000300C /* lev@2x.png in Resources */,

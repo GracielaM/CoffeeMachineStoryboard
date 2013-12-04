@@ -51,7 +51,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1019" y="-892"/>
+            <point key="canvasLocation" x="795" y="-496"/>
         </scene>
         <!--Administration Flow-->
         <scene sceneID="K0B-7y-qiZ">
@@ -97,7 +97,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2fk-Tt-pMC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1857" y="-1061"/>
+            <point key="canvasLocation" x="1565" y="-749"/>
         </scene>
         <!--Insufficient Amount Flow-->
         <scene sceneID="PCj-W7-FEU">
@@ -111,7 +111,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OfF-RM-eka">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OfF-RM-eka">
                                 <rect key="frame" x="0.0" y="66" width="320" height="594"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
@@ -162,7 +162,6 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XqP-H2-XC4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2572" y="-1242"/>
         </scene>
         <!--Payment Flow-->
         <scene sceneID="GxW-xE-VOk">
@@ -176,11 +175,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sNl-7X-miI">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sNl-7X-miI">
                                 <rect key="frame" x="0.0" y="66" width="320" height="556"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="5.png" translatesAutoresizingMaskIntoConstraints="NO" id="lxu-ed-wYN">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5.png" translatesAutoresizingMaskIntoConstraints="NO" id="lxu-ed-wYN">
                                 <rect key="frame" x="20" y="72" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
@@ -192,7 +191,7 @@
                                     <outletCollection property="gestureRecognizers" destination="JKe-dM-JWJ" appends="YES" id="jBo-et-fRj"/>
                                 </connections>
                             </imageView>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="50.png" translatesAutoresizingMaskIntoConstraints="NO" id="YvP-dH-W1c">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="50.png" translatesAutoresizingMaskIntoConstraints="NO" id="YvP-dH-W1c">
                                 <rect key="frame" x="73" y="150" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
@@ -204,7 +203,7 @@
                                     <outletCollection property="gestureRecognizers" destination="pYn-VJ-gid" appends="YES" id="ZOl-15-hjt"/>
                                 </connections>
                             </imageView>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="lev.png" translatesAutoresizingMaskIntoConstraints="NO" id="YWV-Xp-TdP">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lev.png" translatesAutoresizingMaskIntoConstraints="NO" id="YWV-Xp-TdP">
                                 <rect key="frame" x="178" y="150" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
@@ -216,7 +215,7 @@
                                     <outletCollection property="gestureRecognizers" destination="mx3-jC-XnN" appends="YES" id="Su2-RQ-UXA"/>
                                 </connections>
                             </imageView>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="20.png" translatesAutoresizingMaskIntoConstraints="NO" id="3FG-Rc-A1e">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="20.png" translatesAutoresizingMaskIntoConstraints="NO" id="3FG-Rc-A1e">
                                 <rect key="frame" x="230" y="72" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
@@ -228,7 +227,7 @@
                                     <outletCollection property="gestureRecognizers" destination="RIw-RG-O3T" appends="YES" id="cEd-o6-BD1"/>
                                 </connections>
                             </imageView>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="10.png" translatesAutoresizingMaskIntoConstraints="NO" id="2Qr-CB-9fy">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="10.png" translatesAutoresizingMaskIntoConstraints="NO" id="2Qr-CB-9fy">
                                 <rect key="frame" x="125" y="72" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
@@ -336,7 +335,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1658" y="-134"/>
+            <point key="canvasLocation" x="1206" y="478"/>
         </scene>
         <!--Order Finalize Flow-->
         <scene sceneID="pXW-a5-noZ">
@@ -354,31 +353,30 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="yourChange.png" translatesAutoresizingMaskIntoConstraints="NO" id="HAV-Pq-MLZ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yourChange.png" translatesAutoresizingMaskIntoConstraints="NO" id="HAV-Pq-MLZ">
                                 <rect key="frame" x="20" y="482" width="156" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="66" id="oWg-9O-oLC"/>
+                                    <constraint firstAttribute="height" constant="66" id="ZR0-CY-FeT"/>
+                                    <constraint firstAttribute="width" constant="156" id="cHv-BZ-Fw7"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="readyDrinImg1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="pV4-mq-6ye">
                                 <rect key="frame" x="20" y="80" width="147" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="52" id="zwh-Ew-u4I"/>
+                                    <constraint firstAttribute="height" constant="52" id="AuF-hr-OSB"/>
+                                    <constraint firstAttribute="width" constant="147" id="MCF-3U-XDw"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHz-Zk-LCz">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHz-Zk-LCz">
                                 <rect key="frame" x="184" y="95" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="42" id="H7v-10-ybA"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="640-Xc-e0J">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="640-Xc-e0J">
                                 <rect key="frame" x="184" y="504" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -387,32 +385,18 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Nlm-1m-W9y" firstAttribute="top" secondItem="Xys-qJ-qFx" secondAttribute="top" id="7nW-EI-cwG"/>
-                            <constraint firstItem="bHz-Zk-LCz" firstAttribute="leading" secondItem="pV4-mq-6ye" secondAttribute="trailing" constant="51" id="8en-eh-iRv"/>
                             <constraint firstItem="pV4-mq-6ye" firstAttribute="leading" secondItem="Xys-qJ-qFx" secondAttribute="leading" constant="20" symbolic="YES" id="A0W-m0-Id5"/>
-                            <constraint firstItem="bHz-Zk-LCz" firstAttribute="top" secondItem="Zf3-Ad-K5A" secondAttribute="bottom" constant="75" id="BXS-UF-XhY"/>
-                            <constraint firstAttribute="bottom" secondItem="Nlm-1m-W9y" secondAttribute="bottom" id="Cb9-hf-Ckt"/>
                             <constraint firstItem="pV4-mq-6ye" firstAttribute="top" secondItem="Zf3-Ad-K5A" secondAttribute="bottom" constant="16" id="Itv-tK-Cyd"/>
                             <constraint firstAttribute="bottom" secondItem="HAV-Pq-MLZ" secondAttribute="bottom" constant="20" symbolic="YES" id="MLx-BB-wpn"/>
-                            <constraint firstAttribute="trailing" secondItem="bHz-Zk-LCz" secondAttribute="trailing" constant="60" id="MPk-It-syr"/>
                             <constraint firstAttribute="trailing" secondItem="Nlm-1m-W9y" secondAttribute="trailing" id="O8x-Dz-jRK"/>
-                            <constraint firstItem="pV4-mq-6ye" firstAttribute="top" secondItem="Zf3-Ad-K5A" secondAttribute="bottom" constant="60" id="OFY-S8-wuh"/>
-                            <constraint firstItem="Nlm-1m-W9y" firstAttribute="leading" secondItem="Xys-qJ-qFx" secondAttribute="leading" id="Oo5-BA-zq4"/>
-                            <constraint firstItem="640-Xc-e0J" firstAttribute="leading" secondItem="bHz-Zk-LCz" secondAttribute="leading" id="Roo-t3-jXZ"/>
-                            <constraint firstItem="640-Xc-e0J" firstAttribute="leading" secondItem="HAV-Pq-MLZ" secondAttribute="trailing" constant="42" id="Thp-EC-cw7"/>
-                            <constraint firstAttribute="trailing" secondItem="Nlm-1m-W9y" secondAttribute="trailing" id="YcO-Pi-sif"/>
-                            <constraint firstItem="pV4-mq-6ye" firstAttribute="leading" secondItem="Xys-qJ-qFx" secondAttribute="leading" constant="20" symbolic="YES" id="ahH-we-X2K"/>
-                            <constraint firstItem="US5-bh-lm1" firstAttribute="top" secondItem="640-Xc-e0J" secondAttribute="bottom" constant="43" id="bkV-yb-oyQ"/>
                             <constraint firstItem="Nlm-1m-W9y" firstAttribute="leading" secondItem="Xys-qJ-qFx" secondAttribute="leading" id="cMt-di-YEN"/>
                             <constraint firstAttribute="bottom" secondItem="Nlm-1m-W9y" secondAttribute="bottom" id="cmE-P5-2eo"/>
-                            <constraint firstItem="pV4-mq-6ye" firstAttribute="leading" secondItem="HAV-Pq-MLZ" secondAttribute="leading" id="fkT-li-0dw"/>
                             <constraint firstItem="640-Xc-e0J" firstAttribute="leading" secondItem="HAV-Pq-MLZ" secondAttribute="trailing" constant="8" symbolic="YES" id="otH-dO-7lg"/>
                             <constraint firstItem="bHz-Zk-LCz" firstAttribute="top" secondItem="Zf3-Ad-K5A" secondAttribute="bottom" constant="31" id="pYB-Cb-F6J"/>
                             <constraint firstItem="HAV-Pq-MLZ" firstAttribute="leading" secondItem="pV4-mq-6ye" secondAttribute="leading" id="pam-Qt-xaE"/>
                             <constraint firstItem="bHz-Zk-LCz" firstAttribute="leading" secondItem="640-Xc-e0J" secondAttribute="leading" id="sjd-OU-Rwf"/>
                             <constraint firstItem="US5-bh-lm1" firstAttribute="top" secondItem="640-Xc-e0J" secondAttribute="bottom" constant="43" id="tei-8l-NeB"/>
                             <constraint firstItem="Nlm-1m-W9y" firstAttribute="top" secondItem="Xys-qJ-qFx" secondAttribute="top" id="y4p-zt-d5u"/>
-                            <constraint firstAttribute="bottom" secondItem="HAV-Pq-MLZ" secondAttribute="bottom" constant="20" symbolic="YES" id="yOw-FG-kuZ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Y1E-k1-5uQ"/>
@@ -422,12 +406,11 @@
                         <outlet property="changeLbl" destination="640-Xc-e0J" id="gGF-lR-ggw"/>
                         <outlet property="infoDrinkLbl" destination="bHz-Zk-LCz" id="jNl-WL-XVz"/>
                         <outlet property="readyDrinkImg" destination="pV4-mq-6ye" id="DfL-nW-blT"/>
-                        <segue destination="vXZ-lx-hvc" kind="push" identifier="FinalizeToDrinksView" id="cu6-F1-wqs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4hh-Sq-9WY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3084" y="-190"/>
+            <point key="canvasLocation" x="2176" y="-62"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="BUg-X5-UXl">
@@ -464,7 +447,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="cu6-F1-wqs"/>
         <segue reference="SEE-lb-m6Q"/>
     </inferredMetricsTieBreakers>
 </document>
