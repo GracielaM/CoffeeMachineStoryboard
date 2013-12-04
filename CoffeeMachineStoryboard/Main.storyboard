@@ -110,13 +110,63 @@
                     <view key="view" contentMode="scaleToFill" id="upp-hZ-mxp">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OfF-RM-eka">
+                                <rect key="frame" x="0.0" y="66" width="320" height="594"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vaL-8K-Po6">
+                                <rect key="frame" x="109" y="287" width="102" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Make drink">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="switchToFinalizeFlow:" destination="Dpm-O9-e8O" eventType="touchUpInside" id="I91-1A-G9E"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBK-UC-iQI">
+                                <rect key="frame" x="109" y="361" width="102" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="102" id="0mb-O8-Syx"/>
+                                </constraints>
+                                <state key="normal" title="Cancel order">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="switchToDrinkListFlow:" destination="Dpm-O9-e8O" eventType="touchUpInside" id="Amm-kj-MuP"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cBK-UC-iQI" firstAttribute="top" secondItem="vaL-8K-Po6" secondAttribute="bottom" constant="44" id="GY2-OD-cw6"/>
+                            <constraint firstItem="OfF-RM-eka" firstAttribute="centerX" secondItem="cBK-UC-iQI" secondAttribute="centerX" id="Htp-Rf-iKv"/>
+                            <constraint firstItem="cBK-UC-iQI" firstAttribute="centerX" secondItem="upp-hZ-mxp" secondAttribute="centerX" id="M5a-dI-xM0"/>
+                            <constraint firstItem="CfC-GT-cpI" firstAttribute="top" secondItem="cBK-UC-iQI" secondAttribute="bottom" constant="177" id="PDu-L7-uxZ"/>
+                            <constraint firstItem="OfF-RM-eka" firstAttribute="top" secondItem="oAm-f2-d1t" secondAttribute="bottom" constant="2" id="Uce-a7-JRd"/>
+                            <constraint firstItem="OfF-RM-eka" firstAttribute="leading" secondItem="upp-hZ-mxp" secondAttribute="leading" id="VB6-tj-zmK"/>
+                            <constraint firstItem="cBK-UC-iQI" firstAttribute="leading" secondItem="vaL-8K-Po6" secondAttribute="leading" id="WfP-Ck-ryY"/>
+                            <constraint firstItem="OfF-RM-eka" firstAttribute="centerX" secondItem="vaL-8K-Po6" secondAttribute="centerX" id="nDD-dV-xql"/>
+                            <constraint firstAttribute="bottom" secondItem="OfF-RM-eka" secondAttribute="bottom" constant="-92" id="re2-hx-7NO"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="sSZ-QY-wRa"/>
+                    <connections>
+                        <outlet property="backImageView" destination="OfF-RM-eka" id="9Wi-zm-YJe"/>
+                        <outlet property="cancelOrderBtn" destination="cBK-UC-iQI" id="24H-eD-tRZ"/>
+                        <outlet property="makeDrinkBtn" destination="vaL-8K-Po6" id="1fN-f8-GZq"/>
+                        <segue destination="9aK-xP-s6M" kind="push" identifier="InsufficientToFinalizeView" id="x9X-3K-y0i"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XqP-H2-XC4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
+            <point key="canvasLocation" x="2644" y="-849"/>
+=======
             <point key="canvasLocation" x="2186" y="-749"/>
+>>>>>>> edb7b2904148716c695f6937b97ad8425a4e9a7c
         </scene>
         <!--Payment Flow-->
         <scene sceneID="GxW-xE-VOk">
@@ -365,7 +415,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4hh-Sq-9WY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1816" y="-62"/>
+            <point key="canvasLocation" x="2176" y="-62"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="BUg-X5-UXl">
@@ -401,4 +451,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="x9X-3K-y0i"/>
+    </inferredMetricsTieBreakers>
 </document>
