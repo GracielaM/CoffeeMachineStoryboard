@@ -94,40 +94,78 @@
     _backImgView.contentMode = UIViewContentModeScaleAspectFill;
 }
 
-// switching to OrderFinalizeFlow or InsufficientAmountFlow when inserted coins are enough 
-- (void) switchMenu
-{
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    
     if( _userCoins.sumOfCoins >= _selectedDrink.price){
         int change = [_userCoins sumOfCoins] - _selectedDrink.price;
         Withdraw* withdraw = [[Withdraw alloc] init];
         withdraw = [_coffeeMachineState.coins withdraw:change];
-        if(withdraw.status == SUCCESSFUL){
-            OrderFinalizeFlow *orderFinalizeFlow =[ [OrderFinalizeFlow alloc]initWithNibName:@"OrderFinalizeFlow" bundle:nil];
-            orderFinalizeFlow.coffeeMachineState = self.coffeeMachineState;
-            orderFinalizeFlow.selectedDrink = self.selectedDrink;
-            orderFinalizeFlow.change = withdraw.change;
-            orderFinalizeFlow.userCoins = self.userCoins;
-            orderFinalizeFlow.willGetDrink = YES;
-            [self animatedSwitchMenu:orderFinalizeFlow];
+    if ([[segue identifier] isEqualToString:@"PaymentToFinalizeView"]) {
+        OrderFinalizeFlow *order = (OrderFinalizeFlow*)[segue destinationViewController];
+        
+            if(withdraw.status == SUCCESSFUL){
+                
+                order.coffeeMachineState = self.coffeeMachineState;
+                order.selectedDrink = self.selectedDrink;
+                order.change = withdraw.change;
+                order.userCoins = self.userCoins;
+                order.willGetDrink = YES;
+                [self animatedSwitchMenu:@"PaymentToFinalizeView"];
+                
+            }
+        if ([[segue identifier] isEqualToString:@"PaymentToFinalizeView"]) {
+            InsufficientAmountFlow *insAmountView = (InsufficientAmountFlow*)[segue destinationViewController];
             
+                insAmountView.coffeeMachineState = self.coffeeMachineState;
+                insAmountView.selectedDrink = self.selectedDrink;
+                insAmountView.change = withdraw.change;
+                insAmountView.userCoins = self.userCoins;
+                [self animatedSwitchMenu:@"PaymentToInsufficientView"];
+            }
         }
-        else{
-            InsufficientAmountFlow *insAmountFlow=[[InsufficientAmountFlow alloc]initWithNibName:@"InsufficientAmountFlow" bundle:nil];
-            insAmountFlow.coffeeMachineState = self.coffeeMachineState;
-            insAmountFlow.selectedDrink = self.selectedDrink;
-            insAmountFlow.change = withdraw.change;
-            insAmountFlow.userCoins = self.userCoins;
-            [self animatedSwitchMenu:insAmountFlow];
-        }
+    
+    
     }
-}
+   }
 
--(void)animatedSwitchMenu: (id)flow
+
+// switching to OrderFinalizeFlow or InsufficientAmountFlow when inserted coins are enough 
+//- (void) switchMenu
+//{
+//    if( _userCoins.sumOfCoins >= _selectedDrink.price){
+//        int change = [_userCoins sumOfCoins] - _selectedDrink.price;
+//        Withdraw* withdraw = [[Withdraw alloc] init];
+//        withdraw = [_coffeeMachineState.coins withdraw:change];
+//        if(withdraw.status == SUCCESSFUL){
+//            OrderFinalizeFlow *orderFinalizeFlow =[ [OrderFinalizeFlow alloc]initWithNibName:@"OrderFinalizeFlow" bundle:nil];
+//            orderFinalizeFlow.coffeeMachineState = self.coffeeMachineState;
+//            orderFinalizeFlow.selectedDrink = self.selectedDrink;
+//            orderFinalizeFlow.change = withdraw.change;
+//            orderFinalizeFlow.userCoins = self.userCoins;
+//            orderFinalizeFlow.willGetDrink = YES;
+//            [self animatedSwitchMenu:@"PaymentToFinalizeView"];
+//            
+//        }
+//        else{
+//            InsufficientAmountFlow *insAmountFlow=[[InsufficientAmountFlow alloc]initWithNibName:@"InsufficientAmountFlow" bundle:nil];
+//            insAmountFlow.coffeeMachineState = self.coffeeMachineState;
+//            insAmountFlow.selectedDrink = self.selectedDrink;
+//            insAmountFlow.change = withdraw.change;
+//            insAmountFlow.userCoins = self.userCoins;
+//            [self animatedSwitchMenu:@"PaymentToInsufficientView"];
+//        }
+//    }
+//}
+
+-(void)animatedSwitchMenu: (id)segueToView
 {
     [UIView  beginAnimations:nil context:NULL];
     [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
     [UIView setAnimationDuration:0.75];
-    [self.navigationController pushViewController:flow animated:NO];
+  //  [self.navigationController pushViewController:flow animated:NO];
+     [self performSegueWithIdentifier: segueToView sender: self];
     [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:self.navigationController.view cache:NO];
     [UIView commitAnimations];
 }
@@ -175,31 +213,31 @@
     if (image.image == _fiveImg.image){
         [self setCoinInUserCoins:5];
         [self remainingSumOfCoins];
-        [self switchMenu];
+        //[self prepareForSegue:<#(UIStoryboardSegue *)#> sender:<#(id)#>];
     }
     if (image.image == _tenImg.image)
     {
         [self setCoinInUserCoins:10];
         [self remainingSumOfCoins];
-        [self switchMenu];
+        //[self switchMenu];
     }
     if (image.image == _twentyImg.image)
     {
         [self setCoinInUserCoins:20];
         [self remainingSumOfCoins];
-        [self switchMenu];
+       // [self switchMenu];
     }
     if (image.image == _fiftyImg.image)
     {
         [self setCoinInUserCoins:50];
         [self remainingSumOfCoins];
-        [self switchMenu];
+       // [self switchMenu];
     }
     if (image.image == _levImg.image)
     {
         [self setCoinInUserCoins:100];
         [self remainingSumOfCoins];
-        [self switchMenu];
+        //[self switchMenu];
     }
 }
 

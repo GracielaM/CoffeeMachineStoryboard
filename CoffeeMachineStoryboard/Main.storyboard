@@ -259,8 +259,8 @@
                         <outlet property="sumLbl" destination="23p-DR-IBE" id="sdY-SG-fgO"/>
                         <outlet property="tenImg" destination="2Qr-CB-9fy" id="EeU-Al-Vkz"/>
                         <outlet property="twentyImg" destination="3FG-Rc-A1e" id="K9Z-q1-iCI"/>
-                        <segue destination="9aK-xP-s6M" kind="push" id="SEE-lb-m6Q"/>
-                        <segue destination="Dpm-O9-e8O" kind="push" id="t0Y-Ty-D98"/>
+                        <segue destination="9aK-xP-s6M" kind="push" identifier="PaymentToFinalizeView" id="SEE-lb-m6Q"/>
+                        <segue destination="Dpm-O9-e8O" kind="push" identifier="PaymentToInsufficientView" id="t0Y-Ty-D98"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sq0-cT-MFX" userLabel="First Responder" sceneMemberID="firstResponder"/>
