@@ -48,6 +48,20 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"InsufficientToFinalizeView"])
+    {
+        OrderFinalizeFlow *order = (OrderFinalizeFlow *)[segue destinationViewController];
+        order.coffeeMachineState = self.coffeeMachineState;
+        order.selectedDrink = self.selectedDrink;
+        order.change = self.change;
+        order.userCoins = self.userCoins;
+        
+
+    }
+}
+
 
 
 //switch to finalize flow, type: "make drink, don't return coins
@@ -62,16 +76,17 @@
 
 -(void)switchMenu: (BOOL)getableDrink
 {
-    OrderFinalizeFlow *orderFinalizeFlow = [[OrderFinalizeFlow alloc]initWithNibName:@"OrderFinalizeFlow" bundle:nil];
-    orderFinalizeFlow.coffeeMachineState =self.coffeeMachineState;
-    orderFinalizeFlow.selectedDrink = self.selectedDrink;
-    orderFinalizeFlow.change = self.change;
-    orderFinalizeFlow.userCoins = self.userCoins;
+    OrderFinalizeFlow *orderFinalizeFlow = [[OrderFinalizeFlow alloc]init];
+    //orderFinalizeFlow.coffeeMachineState =self.coffeeMachineState;
+   // orderFinalizeFlow.selectedDrink = self.selectedDrink;
+   // orderFinalizeFlow.change = self.change;
+   // orderFinalizeFlow.userCoins = self.userCoins;
     orderFinalizeFlow.willGetDrink = getableDrink;// shows to orderFinalizeFlow that the custumer woun't get drink
     [UIView  beginAnimations:nil context:NULL];
     [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
     [UIView setAnimationDuration:0.75];
-    [self.navigationController pushViewController:orderFinalizeFlow animated:YES];
+    //[self.navigationController pushViewController:orderFinalizeFlow animated:YES];
+    [self performSegueWithIdentifier:@"InsufficientToFinalizeView" sender: self];
     [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:self.navigationController.view cache:NO];
     [UIView commitAnimations];
 }
