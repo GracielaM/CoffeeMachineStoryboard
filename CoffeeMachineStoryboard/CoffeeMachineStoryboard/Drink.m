@@ -26,7 +26,7 @@
 
 -(NSString*)description
 {
-    return [NSString stringWithFormat:@"name: %@, price: %ul", self.name, self.price];
+    return [NSString stringWithFormat:@"%@ - %u", self.name, self.price];
 }
 
 - (id)copy
