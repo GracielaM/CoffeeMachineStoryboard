@@ -162,10 +162,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XqP-H2-XC4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-<<<<<<< HEAD
             <point key="canvasLocation" x="2572" y="-1242"/>
-=======
->>>>>>> 8e618b4b560046dc40153f03783f784f8e7f5e3e
         </scene>
         <!--Payment Flow-->
         <scene sceneID="GxW-xE-VOk">
@@ -339,11 +336,9 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-<<<<<<< HEAD
+
             <point key="canvasLocation" x="1658" y="-134"/>
-=======
             <point key="canvasLocation" x="1206" y="478"/>
->>>>>>> 8e618b4b560046dc40153f03783f784f8e7f5e3e
         </scene>
         <!--Order Finalize Flow-->
         <scene sceneID="pXW-a5-noZ">
@@ -394,7 +389,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-<<<<<<< HEAD
+
                             <constraint firstItem="Nlm-1m-W9y" firstAttribute="top" secondItem="Xys-qJ-qFx" secondAttribute="top" id="7nW-EI-cwG"/>
                             <constraint firstItem="bHz-Zk-LCz" firstAttribute="leading" secondItem="pV4-mq-6ye" secondAttribute="trailing" constant="51" id="8en-eh-iRv"/>
                             <constraint firstItem="bHz-Zk-LCz" firstAttribute="top" secondItem="Zf3-Ad-K5A" secondAttribute="bottom" constant="75" id="BXS-UF-XhY"/>
@@ -409,8 +404,7 @@
                             <constraint firstItem="US5-bh-lm1" firstAttribute="top" secondItem="640-Xc-e0J" secondAttribute="bottom" constant="43" id="bkV-yb-oyQ"/>
                             <constraint firstItem="pV4-mq-6ye" firstAttribute="leading" secondItem="HAV-Pq-MLZ" secondAttribute="leading" id="fkT-li-0dw"/>
                             <constraint firstAttribute="bottom" secondItem="HAV-Pq-MLZ" secondAttribute="bottom" constant="20" symbolic="YES" id="yOw-FG-kuZ"/>
-=======
-                            <constraint firstItem="pV4-mq-6ye" firstAttribute="leading" secondItem="Xys-qJ-qFx" secondAttribute="leading" constant="20" symbolic="YES" id="A0W-m0-Id5"/>
+                    <constraint firstItem="pV4-mq-6ye" firstAttribute="leading" secondItem="Xys-qJ-qFx" secondAttribute="leading" constant="20" symbolic="YES" id="A0W-m0-Id5"/>
                             <constraint firstItem="pV4-mq-6ye" firstAttribute="top" secondItem="Zf3-Ad-K5A" secondAttribute="bottom" constant="16" id="Itv-tK-Cyd"/>
                             <constraint firstAttribute="bottom" secondItem="HAV-Pq-MLZ" secondAttribute="bottom" constant="20" symbolic="YES" id="MLx-BB-wpn"/>
                             <constraint firstAttribute="trailing" secondItem="Nlm-1m-W9y" secondAttribute="trailing" id="O8x-Dz-jRK"/>
@@ -422,7 +416,6 @@
                             <constraint firstItem="bHz-Zk-LCz" firstAttribute="leading" secondItem="640-Xc-e0J" secondAttribute="leading" id="sjd-OU-Rwf"/>
                             <constraint firstItem="US5-bh-lm1" firstAttribute="top" secondItem="640-Xc-e0J" secondAttribute="bottom" constant="43" id="tei-8l-NeB"/>
                             <constraint firstItem="Nlm-1m-W9y" firstAttribute="top" secondItem="Xys-qJ-qFx" secondAttribute="top" id="y4p-zt-d5u"/>
->>>>>>> 8e618b4b560046dc40153f03783f784f8e7f5e3e
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Y1E-k1-5uQ"/>
@@ -474,10 +467,9 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-<<<<<<< HEAD
+
         <segue reference="cu6-F1-wqs"/>
-=======
->>>>>>> 8e618b4b560046dc40153f03783f784f8e7f5e3e
+
         <segue reference="SEE-lb-m6Q"/>
     </inferredMetricsTieBreakers>
 </document>
