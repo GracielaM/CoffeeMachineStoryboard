@@ -35,7 +35,7 @@
     [self formatView];
     [self updateCoffeeMachineState]; // updates coffeeMachineState
     self.infoDrinkLbl.text = self.selectedDrink.name.uppercaseString;
-    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStyleBordered target:self action:@selector(backToDrinkListFlow:)];
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back to Drinks" style:UIBarButtonItemStyleBordered target:self action:@selector(backToDrinkListFlow:)];
     self.navigationItem.leftBarButtonItem = backButton;
 }
 
@@ -88,6 +88,7 @@
     [UIView beginAnimations:nil context:NULL];
     [UIView setAnimationDelay:0.375];
     [self.navigationController popToRootViewControllerAnimated:NO];
+    //[self performSegueWithIdentifier:@"FinalizeToDrinksView" sender:self];
     [UIView commitAnimations];
 }
 
