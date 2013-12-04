@@ -37,7 +37,7 @@
 -(void) moveCoin: (UIView*) image;
 -(BOOL)didCoinImageIsInSlotImg: (UIView*)coinImage slotImage: (UIView*)slotImage : (int) pixSensitivity;
 -(void)updateSum: (UIImageView*) image;
--(void)animatedSwitchMenu: (id)flow;
+-(void)animatedSwitchMenu: (id)segueToView;
 -(void)formatView;
 -(void)remainingSumOfCoins;
 @end

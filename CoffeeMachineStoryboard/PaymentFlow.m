@@ -94,40 +94,63 @@
     _backImgView.contentMode = UIViewContentModeScaleAspectFill;
 }
 
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    int change = [_userCoins sumOfCoins] - _selectedDrink.price;
+    Withdraw* withdraw = [[Withdraw alloc] init];
+    withdraw = [_coffeeMachineState.coins withdraw:change];
+    if ([[segue identifier] isEqualToString:@"PaymentToFinalizeView"])
+    {
+        OrderFinalizeFlow *order = (OrderFinalizeFlow*)[segue destinationViewController];
+        
+                           order.coffeeMachineState = self.coffeeMachineState;
+                order.selectedDrink = self.selectedDrink;
+                order.change = withdraw.change;
+                order.userCoins = self.userCoins;
+                order.willGetDrink = YES;
+        
+     }
+        if ([[segue identifier] isEqualToString:@"PaymentToFinalizeView"])
+        {
+            InsufficientAmountFlow *insAmountView = (InsufficientAmountFlow*)[segue destinationViewController];
+            
+                insAmountView.coffeeMachineState = self.coffeeMachineState;
+                insAmountView.selectedDrink = self.selectedDrink;
+                insAmountView.change = withdraw.change;
+                insAmountView.userCoins = self.userCoins;
+         }
+    
+    
+    
+    }
+
+
+
 // switching to OrderFinalizeFlow or InsufficientAmountFlow when inserted coins are enough 
 - (void) switchMenu
 {
-    if( _userCoins.sumOfCoins >= _selectedDrink.price){
+    if( _userCoins.sumOfCoins >= _selectedDrink.price)
+    {
         int change = [_userCoins sumOfCoins] - _selectedDrink.price;
         Withdraw* withdraw = [[Withdraw alloc] init];
         withdraw = [_coffeeMachineState.coins withdraw:change];
         if(withdraw.status == SUCCESSFUL){
-            OrderFinalizeFlow *orderFinalizeFlow =[ [OrderFinalizeFlow alloc]initWithNibName:@"OrderFinalizeFlow" bundle:nil];
-            orderFinalizeFlow.coffeeMachineState = self.coffeeMachineState;
-            orderFinalizeFlow.selectedDrink = self.selectedDrink;
-            orderFinalizeFlow.change = withdraw.change;
-            orderFinalizeFlow.userCoins = self.userCoins;
-            orderFinalizeFlow.willGetDrink = YES;
-            [self animatedSwitchMenu:orderFinalizeFlow];
-            
-        }
-        else{
-            InsufficientAmountFlow *insAmountFlow=[[InsufficientAmountFlow alloc]initWithNibName:@"InsufficientAmountFlow" bundle:nil];
-            insAmountFlow.coffeeMachineState = self.coffeeMachineState;
-            insAmountFlow.selectedDrink = self.selectedDrink;
-            insAmountFlow.change = withdraw.change;
-            insAmountFlow.userCoins = self.userCoins;
-            [self animatedSwitchMenu:insAmountFlow];
-        }
+            [self animatedSwitchMenu:@"PaymentToFinalizeView"];
+           
+ }else{
+    [self animatedSwitchMenu:@"PaymentToInsufficientView"];
+      }
     }
 }
 
--(void)animatedSwitchMenu: (id)flow
+-(void)animatedSwitchMenu: (id)segueToView
 {
     [UIView  beginAnimations:nil context:NULL];
     [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
     [UIView setAnimationDuration:0.75];
-    [self.navigationController pushViewController:flow animated:NO];
+  //  [self.navigationController pushViewController:flow animated:NO];
+     [self performSegueWithIdentifier: segueToView sender: self];
     [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:self.navigationController.view cache:NO];
     [UIView commitAnimations];
 }
@@ -199,7 +222,7 @@
     {
         [self setCoinInUserCoins:100];
         [self remainingSumOfCoins];
-        [self switchMenu];
+         [self switchMenu];
     }
 }
 

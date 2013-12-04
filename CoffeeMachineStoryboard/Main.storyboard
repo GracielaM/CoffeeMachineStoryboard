@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="fsz-8Z-Cot">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="fsz-8Z-Cot">
     <dependencies>
         <deployment defaultVersion="1552" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
     </dependencies>
     <scenes>
         <!--Drinks Table View-->
@@ -259,8 +259,8 @@
                         <outlet property="sumLbl" destination="23p-DR-IBE" id="sdY-SG-fgO"/>
                         <outlet property="tenImg" destination="2Qr-CB-9fy" id="EeU-Al-Vkz"/>
                         <outlet property="twentyImg" destination="3FG-Rc-A1e" id="K9Z-q1-iCI"/>
-                        <segue destination="9aK-xP-s6M" kind="push" id="SEE-lb-m6Q"/>
-                        <segue destination="Dpm-O9-e8O" kind="push" id="t0Y-Ty-D98"/>
+                        <segue destination="9aK-xP-s6M" kind="push" identifier="PaymentToFinalizeView" id="SEE-lb-m6Q"/>
+                        <segue destination="Dpm-O9-e8O" kind="push" identifier="PaymentToInsufficientView" id="t0Y-Ty-D98"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sq0-cT-MFX" userLabel="First Responder" sceneMemberID="firstResponder"/>

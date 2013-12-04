@@ -42,6 +42,8 @@
     _itemsArrayDrinks = [[NSMutableArray alloc] initWithArray:[[_coffeeMachineState currentDrinks] drinksString]];
     _itemsArayDrinkPrices = [[NSMutableArray alloc] initWithArray:[[_coffeeMachineState currentDrinks] drinkPricesString]];
 }
+
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"MySegue"]) {
         AdministrationFlow *admin = (AdministrationFlow *)[segue destinationViewController];
