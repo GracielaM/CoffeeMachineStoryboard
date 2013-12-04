@@ -52,6 +52,8 @@
 		5ADB95FB1848A3B50000300C /* lev@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADB95F91848A3B50000300C /* lev@2x.png */; };
 		5ADB95FD1848D4100000300C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ADB95FC1848D4100000300C /* Main.storyboard */; };
 		5ADB95FF1848D70C0000300C /* slot.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADB95FE1848D70C0000300C /* slot.png */; };
+		68A44A92184F24C00076A5DC /* readyDrinImg1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 68A44A91184F24C00076A5DC /* readyDrinImg1.jpg */; };
+		68A44A94184F25150076A5DC /* yourChange.png in Resources */ = {isa = PBXBuildFile; fileRef = 68A44A93184F25150076A5DC /* yourChange.png */; };
 		68C63BAC184CC2B200E6C63C /* dropCoin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 68C63BAB184CC2B200E6C63C /* dropCoin.mp3 */; };
 		68C63C60184CC32B00E6C63C /* coinBack.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 68C63C5F184CC32B00E6C63C /* coinBack.mp3 */; };
 /* End PBXBuildFile section */
@@ -131,6 +133,8 @@
 		5ADB95F91848A3B50000300C /* lev@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lev@2x.png"; sourceTree = "<group>"; };
 		5ADB95FC1848D4100000300C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../Main.storyboard; sourceTree = "<group>"; };
 		5ADB95FE1848D70C0000300C /* slot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slot.png; sourceTree = "<group>"; };
+		68A44A91184F24C00076A5DC /* readyDrinImg1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = readyDrinImg1.jpg; sourceTree = "<group>"; };
+		68A44A93184F25150076A5DC /* yourChange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yourChange.png; sourceTree = "<group>"; };
 		68C63BAB184CC2B200E6C63C /* dropCoin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dropCoin.mp3; sourceTree = "<group>"; };
 		68C63C5F184CC32B00E6C63C /* coinBack.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = coinBack.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -219,7 +223,9 @@
 		5A47D22A184617320075A865 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				68A44A91184F24C00076A5DC /* readyDrinImg1.jpg */,
 				68C63C5F184CC32B00E6C63C /* coinBack.mp3 */,
+				68A44A93184F25150076A5DC /* yourChange.png */,
 				68C63BAB184CC2B200E6C63C /* dropCoin.mp3 */,
 				5ADB95FE1848D70C0000300C /* slot.png */,
 				5ADB95F81848A3B50000300C /* lev.png */,
@@ -369,10 +375,12 @@
 				5ADB95F01848A2960000300C /* 5.png in Resources */,
 				5ADB95F21848A2960000300C /* 10.png in Resources */,
 				5ADB95FA1848A3B50000300C /* lev.png in Resources */,
+				68A44A94184F25150076A5DC /* yourChange.png in Resources */,
 				5A47D341184787FC0075A865 /* back@2x.png in Resources */,
 				5ADB95F71848A2960000300C /* 50@2x.png in Resources */,
 				5A47D33C184784990075A865 /* coffee-back.png in Resources */,
 				5A47D26E184618620075A865 /* sourceData.plist in Resources */,
+				68A44A92184F24C00076A5DC /* readyDrinImg1.jpg in Resources */,
 				5A47D22E184617320075A865 /* InfoPlist.strings in Resources */,
 				5ADB95F41848A2960000300C /* 20.png in Resources */,
 				5ADB95F31848A2960000300C /* 10@2x.png in Resources */,
@@ -541,6 +549,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CoffeeMachineStoryboard/CoffeeMachineStoryboard-Prefix.pch";
 				INFOPLIST_FILE = "CoffeeMachineStoryboard/CoffeeMachineStoryboard-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -554,6 +563,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CoffeeMachineStoryboard/CoffeeMachineStoryboard-Prefix.pch";
 				INFOPLIST_FILE = "CoffeeMachineStoryboard/CoffeeMachineStoryboard-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

@@ -19,6 +19,7 @@ NSInteger globalPrice;
 @property(strong) CoffeeMachineState *coffeeMachineState;
 @property(strong, nonatomic) UIAlertView *alertView;
 @property(strong) Drink *selectedDrink;
+
 -(IBAction)goToAdministrationFlow:(id)sender;
 -(void)cleanCurrentDrinks;
 -(void)formatView;

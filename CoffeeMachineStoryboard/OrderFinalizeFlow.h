@@ -17,8 +17,8 @@
 @property (strong, nonatomic) IBOutlet UILabel *changeLbl;
 @property (strong, nonatomic) IBOutlet UIImageView *backImageView;
 @property (strong, nonatomic) IBOutlet UIButton *backToDrinkList;
-@property (strong, nonatomic) IBOutlet UIImageView *backImg;
-@property UIImageView* explosion;
+//@property (strong, nonatomic) IBOutlet UIImageView *backImg;
+//@property UIImageView* explosion;
 @property (strong, nonatomic) IBOutlet UIImageView *changeImgView;
 @property (strong, nonatomic) IBOutlet UIImageView *readyDrinkImg;
 @property (strong, nonatomic) IBOutlet UILabel *infoDrinkLbl;
