@@ -162,11 +162,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XqP-H2-XC4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-<<<<<<< HEAD
-            <point key="canvasLocation" x="2644" y="-849"/>
-=======
-            <point key="canvasLocation" x="2186" y="-749"/>
->>>>>>> edb7b2904148716c695f6937b97ad8425a4e9a7c
+
         </scene>
         <!--Payment Flow-->
         <scene sceneID="GxW-xE-VOk">

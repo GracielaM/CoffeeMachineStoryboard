@@ -108,7 +108,7 @@
                 order.userCoins = self.userCoins;
                 order.willGetDrink = YES;
      }
-        if ([[segue identifier] isEqualToString:@"PaymentToFinalizeView"])
+        if ([[segue identifier] isEqualToString:@"PaymentToInsufficientView"])
         {
             InsufficientAmountFlow *insAmountView = (InsufficientAmountFlow*)[segue destinationViewController];
                 insAmountView.coffeeMachineState = self.coffeeMachineState;
