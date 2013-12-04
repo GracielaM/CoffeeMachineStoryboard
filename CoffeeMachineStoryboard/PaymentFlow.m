@@ -96,35 +96,27 @@
 
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    
     int change = [_userCoins sumOfCoins] - _selectedDrink.price;
     Withdraw* withdraw = [[Withdraw alloc] init];
     withdraw = [_coffeeMachineState.coins withdraw:change];
     if ([[segue identifier] isEqualToString:@"PaymentToFinalizeView"])
     {
         OrderFinalizeFlow *order = (OrderFinalizeFlow*)[segue destinationViewController];
-        
-                           order.coffeeMachineState = self.coffeeMachineState;
+                order.coffeeMachineState = self.coffeeMachineState;
                 order.selectedDrink = self.selectedDrink;
                 order.change = withdraw.change;
                 order.userCoins = self.userCoins;
                 order.willGetDrink = YES;
-        
      }
-        if ([[segue identifier] isEqualToString:@"PaymentToFinalizeView"])
+        if ([[segue identifier] isEqualToString:@"PaymentToInsufficientView"])
         {
             InsufficientAmountFlow *insAmountView = (InsufficientAmountFlow*)[segue destinationViewController];
-            
                 insAmountView.coffeeMachineState = self.coffeeMachineState;
                 insAmountView.selectedDrink = self.selectedDrink;
                 insAmountView.change = withdraw.change;
                 insAmountView.userCoins = self.userCoins;
          }
-    
-    
-    
-    }
-
+}
 
 
 // switching to OrderFinalizeFlow or InsufficientAmountFlow when inserted coins are enough 
@@ -138,8 +130,8 @@
         if(withdraw.status == SUCCESSFUL){
             [self animatedSwitchMenu:@"PaymentToFinalizeView"];
            
- }else{
-    [self animatedSwitchMenu:@"PaymentToInsufficientView"];
+        }else{
+            [self animatedSwitchMenu:@"PaymentToInsufficientView"];
       }
     }
 }

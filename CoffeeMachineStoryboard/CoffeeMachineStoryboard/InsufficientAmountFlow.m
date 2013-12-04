@@ -57,31 +57,32 @@
         order.selectedDrink = self.selectedDrink;
         order.change = self.change;
         order.userCoins = self.userCoins;
-        
-
+        order.willGetDrink = _willGetDrink;// shows to orderFinalizeFlow that the custumer woun't get drink
     }
 }
 
 
 
 //switch to finalize flow, type: "make drink, don't return coins
-- (IBAction)switchToFinalizeFlow:(id)sender {     
-    [self switchMenu:YES];
+- (IBAction)switchToFinalizeFlow:(id)sender {
+    _willGetDrink = YES;
+    [self switchMenu];
 }
 
 //switch to finalize flow, type: "don't make drink, return my coins", the name of method is bad, must be changed
 - (IBAction)switchToDrinkListFlow:(id)sender {
-    [self switchMenu:NO];
+    _willGetDrink = NO;
+    [self switchMenu];
 }
 
--(void)switchMenu: (BOOL)getableDrink
+-(void)switchMenu
 {
-    OrderFinalizeFlow *orderFinalizeFlow = [[OrderFinalizeFlow alloc]init];
+    //OrderFinalizeFlow *orderFinalizeFlow = [[OrderFinalizeFlow alloc]init];
     //orderFinalizeFlow.coffeeMachineState =self.coffeeMachineState;
    // orderFinalizeFlow.selectedDrink = self.selectedDrink;
    // orderFinalizeFlow.change = self.change;
    // orderFinalizeFlow.userCoins = self.userCoins;
-    orderFinalizeFlow.willGetDrink = getableDrink;// shows to orderFinalizeFlow that the custumer woun't get drink
+    
     [UIView  beginAnimations:nil context:NULL];
     [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
     [UIView setAnimationDuration:0.75];

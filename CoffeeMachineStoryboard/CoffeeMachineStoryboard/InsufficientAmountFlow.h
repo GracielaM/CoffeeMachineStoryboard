@@ -22,10 +22,11 @@
 @property MoneyAmount* change;
 @property CoffeeMachineState* coffeeMachineState;
 @property MoneyAmount* userCoins;
+@property BOOL willGetDrink;
 
 - (IBAction)switchToFinalizeFlow:(id)sender;
 - (IBAction)switchToDrinkListFlow:(id)sender;
--(void)switchMenu: (BOOL)getableDrink;
+-(void)switchMenu;
 -(void)formatView;
 
 @end
