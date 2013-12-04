@@ -99,10 +99,10 @@
             </objects>
             <point key="canvasLocation" x="1565" y="-749"/>
         </scene>
-        <!--View Controller-->
+        <!--Insufficient Amount Flow-->
         <scene sceneID="PCj-W7-FEU">
             <objects>
-                <viewController id="Dpm-O9-e8O" sceneMemberID="viewController">
+                <viewController id="Dpm-O9-e8O" customClass="InsufficientAmountFlow" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oAm-f2-d1t"/>
                         <viewControllerLayoutGuide type="bottom" id="CfC-GT-cpI"/>
@@ -112,6 +112,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="sSZ-QY-wRa"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XqP-H2-XC4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -259,6 +260,7 @@
                         <outlet property="tenImg" destination="2Qr-CB-9fy" id="EeU-Al-Vkz"/>
                         <outlet property="twentyImg" destination="3FG-Rc-A1e" id="K9Z-q1-iCI"/>
                         <segue destination="9aK-xP-s6M" kind="push" id="SEE-lb-m6Q"/>
+                        <segue destination="Dpm-O9-e8O" kind="push" id="t0Y-Ty-D98"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sq0-cT-MFX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -288,7 +290,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1268" y="-214"/>
+            <point key="canvasLocation" x="1218" y="-162"/>
         </scene>
         <!--Order Finalize Flow-->
         <scene sceneID="pXW-a5-noZ">
