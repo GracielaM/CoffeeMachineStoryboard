@@ -6,20 +6,20 @@
 //  Copyright (c) 2013 graci. All rights reserved.
 //
 
-#import "OrderFinalizeFlow.h"
+#import "OrderFinalizeView.h"
 #import "Drink.h"
 #import "CoffeeMachineState.h"
 #import "MoneyAmount.h"
-#import "InsufficientAmountFlow.h"
+#import "InsufficientAmountView.h"
 #import "DrinksTableView.h"
 #import "Theme.h"
 
 
-@interface OrderFinalizeFlow ()
+@interface OrderFinalizeView ()
 
 @end
 
-@implementation OrderFinalizeFlow
+@implementation OrderFinalizeView
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

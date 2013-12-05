@@ -29,10 +29,10 @@
 		5A47D26F184618620075A865 /* Withdraw.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A47D267184618620075A865 /* Withdraw.m */; };
 		5A47D272184619230075A865 /* SoundPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A47D271184619230075A865 /* SoundPlayer.m */; };
 		5A47D275184619570075A865 /* Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A47D274184619570075A865 /* Theme.m */; };
-		5A47D27818461A260075A865 /* InsufficientAmountFlow.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A47D27718461A260075A865 /* InsufficientAmountFlow.m */; };
-		5A47D33018461B300075A865 /* AdministrationFlow.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A47D2E118461B300075A865 /* AdministrationFlow.m */; };
-		5A47D33118461B300075A865 /* OrderFinalizeFlow.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A47D2E318461B300075A865 /* OrderFinalizeFlow.m */; };
-		5A47D33218461B300075A865 /* PaymentFlow.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A47D2E518461B300075A865 /* PaymentFlow.m */; };
+		5A47D27818461A260075A865 /* InsufficientAmountView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A47D27718461A260075A865 /* InsufficientAmountView.m */; };
+		5A47D33018461B300075A865 /* AdministrationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A47D2E118461B300075A865 /* AdministrationView.m */; };
+		5A47D33118461B300075A865 /* OrderFinalizeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A47D2E318461B300075A865 /* OrderFinalizeView.m */; };
+		5A47D33218461B300075A865 /* PaymentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A47D2E518461B300075A865 /* PaymentView.m */; };
 		5A47D33318461B300075A865 /* DrinksTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A47D2E718461B300075A865 /* DrinksTableView.m */; };
 		5A47D33918461F080075A865 /* FileWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A47D33818461F080075A865 /* FileWriter.m */; };
 		5A47D33C184784990075A865 /* coffee-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A47D33A184784990075A865 /* coffee-back.png */; };
@@ -104,14 +104,14 @@
 		5A47D271184619230075A865 /* SoundPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundPlayer.m; sourceTree = "<group>"; };
 		5A47D273184619570075A865 /* Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Theme.h; sourceTree = "<group>"; };
 		5A47D274184619570075A865 /* Theme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Theme.m; sourceTree = "<group>"; };
-		5A47D27618461A260075A865 /* InsufficientAmountFlow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InsufficientAmountFlow.h; sourceTree = "<group>"; };
-		5A47D27718461A260075A865 /* InsufficientAmountFlow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InsufficientAmountFlow.m; sourceTree = "<group>"; };
-		5A47D2E018461B300075A865 /* AdministrationFlow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AdministrationFlow.h; path = ../AdministrationFlow.h; sourceTree = "<group>"; };
-		5A47D2E118461B300075A865 /* AdministrationFlow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AdministrationFlow.m; path = ../AdministrationFlow.m; sourceTree = "<group>"; };
-		5A47D2E218461B300075A865 /* OrderFinalizeFlow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OrderFinalizeFlow.h; path = ../OrderFinalizeFlow.h; sourceTree = "<group>"; };
-		5A47D2E318461B300075A865 /* OrderFinalizeFlow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OrderFinalizeFlow.m; path = ../OrderFinalizeFlow.m; sourceTree = "<group>"; };
-		5A47D2E418461B300075A865 /* PaymentFlow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaymentFlow.h; path = ../PaymentFlow.h; sourceTree = "<group>"; };
-		5A47D2E518461B300075A865 /* PaymentFlow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaymentFlow.m; path = ../PaymentFlow.m; sourceTree = "<group>"; };
+		5A47D27618461A260075A865 /* InsufficientAmountView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InsufficientAmountView.h; sourceTree = "<group>"; };
+		5A47D27718461A260075A865 /* InsufficientAmountView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InsufficientAmountView.m; sourceTree = "<group>"; };
+		5A47D2E018461B300075A865 /* AdministrationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AdministrationView.h; path = ../AdministrationView.h; sourceTree = "<group>"; };
+		5A47D2E118461B300075A865 /* AdministrationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AdministrationView.m; path = ../AdministrationView.m; sourceTree = "<group>"; };
+		5A47D2E218461B300075A865 /* OrderFinalizeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OrderFinalizeView.h; path = ../OrderFinalizeView.h; sourceTree = "<group>"; };
+		5A47D2E318461B300075A865 /* OrderFinalizeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OrderFinalizeView.m; path = ../OrderFinalizeView.m; sourceTree = "<group>"; };
+		5A47D2E418461B300075A865 /* PaymentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaymentView.h; path = ../PaymentView.h; sourceTree = "<group>"; };
+		5A47D2E518461B300075A865 /* PaymentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaymentView.m; path = ../PaymentView.m; sourceTree = "<group>"; };
 		5A47D2E618461B300075A865 /* DrinksTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DrinksTableView.h; path = ../DrinksTableView.h; sourceTree = "<group>"; };
 		5A47D2E718461B300075A865 /* DrinksTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DrinksTableView.m; path = ../DrinksTableView.m; sourceTree = "<group>"; };
 		5A47D33718461F080075A865 /* FileWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileWriter.h; sourceTree = "<group>"; };
@@ -199,17 +199,17 @@
 				5A47D258184617FE0075A865 /* Model */,
 				5A47D2E618461B300075A865 /* DrinksTableView.h */,
 				5A47D2E718461B300075A865 /* DrinksTableView.m */,
-				5A47D2E418461B300075A865 /* PaymentFlow.h */,
-				5A47D2E518461B300075A865 /* PaymentFlow.m */,
-				5A47D2E318461B300075A865 /* OrderFinalizeFlow.m */,
-				5A47D2E218461B300075A865 /* OrderFinalizeFlow.h */,
+				5A47D2E418461B300075A865 /* PaymentView.h */,
+				5A47D2E518461B300075A865 /* PaymentView.m */,
+				5A47D2E318461B300075A865 /* OrderFinalizeView.m */,
+				5A47D2E218461B300075A865 /* OrderFinalizeView.h */,
 				5AFB2F4A184F71F700AD281E /* Main.storyboard */,
-				5A47D2E118461B300075A865 /* AdministrationFlow.m */,
-				5A47D2E018461B300075A865 /* AdministrationFlow.h */,
+				5A47D2E118461B300075A865 /* AdministrationView.m */,
+				5A47D2E018461B300075A865 /* AdministrationView.h */,
 				5A47D232184617320075A865 /* AppDelegate.h */,
 				5A47D233184617320075A865 /* AppDelegate.m */,
-				5A47D27618461A260075A865 /* InsufficientAmountFlow.h */,
-				5A47D27718461A260075A865 /* InsufficientAmountFlow.m */,
+				5A47D27618461A260075A865 /* InsufficientAmountView.h */,
+				5A47D27718461A260075A865 /* InsufficientAmountView.m */,
 				5A47D270184619230075A865 /* SoundPlayer.h */,
 				5A47D271184619230075A865 /* SoundPlayer.m */,
 				5A47D273184619570075A865 /* Theme.h */,
@@ -416,17 +416,17 @@
 				5A47D272184619230075A865 /* SoundPlayer.m in Sources */,
 				5A47D26A184618620075A865 /* Drink.m in Sources */,
 				5A47D269184618620075A865 /* Coin.m in Sources */,
-				5A47D27818461A260075A865 /* InsufficientAmountFlow.m in Sources */,
-				5A47D33218461B300075A865 /* PaymentFlow.m in Sources */,
+				5A47D27818461A260075A865 /* InsufficientAmountView.m in Sources */,
+				5A47D33218461B300075A865 /* PaymentView.m in Sources */,
 				5A47D26C184618620075A865 /* FileReader.m in Sources */,
 				5A47D268184618620075A865 /* CoffeeMachineState.m in Sources */,
 				5A47D26F184618620075A865 /* Withdraw.m in Sources */,
 				5A47D234184617320075A865 /* AppDelegate.m in Sources */,
-				5A47D33118461B300075A865 /* OrderFinalizeFlow.m in Sources */,
+				5A47D33118461B300075A865 /* OrderFinalizeView.m in Sources */,
 				5A47D230184617320075A865 /* main.m in Sources */,
 				5A47D275184619570075A865 /* Theme.m in Sources */,
 				5A47D26B184618620075A865 /* DrinksContainer.m in Sources */,
-				5A47D33018461B300075A865 /* AdministrationFlow.m in Sources */,
+				5A47D33018461B300075A865 /* AdministrationView.m in Sources */,
 				5A47D26D184618620075A865 /* MoneyAmount.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

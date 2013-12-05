@@ -12,7 +12,7 @@
 @class CoffeeMachineState;
 @class Drink;
 
-@interface InsufficientAmountFlow : UIViewController
+@interface InsufficientAmountView : UIViewController
 
 @property (strong, nonatomic) IBOutlet UIImageView *backImageView;
 @property (strong, nonatomic) IBOutlet UIButton *makeDrinkBtn;

@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 graci. All rights reserved.
 //
 
-#import "PaymentFlow.h"
+#import "PaymentView.h"
 #import "DrinksTableView.h"
 #import "DrinksContainer.h"
 #import "Withdraw.h"
@@ -15,18 +15,18 @@
 #import "Withdraw.h"
 #import "CoffeeMachineState.h"
 #import "Drink.h"
-#import "OrderFinalizeFlow.h"
-#import "InsufficientAmountFlow.h"
+#import "OrderFinalizeView.h"
+#import "InsufficientAmountView.h"
 #import "SoundPlayer.h"
 #import "Theme.h"
 
 //static NSString *fontName = @"DBLCDTempBlack";
 
-@interface PaymentFlow ()
+@interface PaymentView ()
 @property (strong) UIImageView *movingCoin;
 @end
 
-@implementation PaymentFlow
+@implementation PaymentView
 
 
 - (void)viewDidLoad
@@ -101,7 +101,7 @@
     withdraw = [_coffeeMachineState.coins withdraw:change];
     if ([[segue identifier] isEqualToString:@"PaymentToFinalizeView"])
     {
-        OrderFinalizeFlow *order = (OrderFinalizeFlow*)[segue destinationViewController];
+        OrderFinalizeView *order = (OrderFinalizeView*)[segue destinationViewController];
                 order.coffeeMachineState = self.coffeeMachineState;
                 order.selectedDrink = self.selectedDrink;
                 order.change = withdraw.change;
@@ -110,7 +110,7 @@
      }
         if ([[segue identifier] isEqualToString:@"PaymentToInsufficientView"])
         {
-            InsufficientAmountFlow *insAmountView = (InsufficientAmountFlow*)[segue destinationViewController];
+            InsufficientAmountView *insAmountView = (InsufficientAmountView*)[segue destinationViewController];
                 insAmountView.coffeeMachineState = self.coffeeMachineState;
                 insAmountView.selectedDrink = self.selectedDrink;
                 insAmountView.change = withdraw.change;

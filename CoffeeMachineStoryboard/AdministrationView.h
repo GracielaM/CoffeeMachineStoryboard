@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 @class CoffeeMachineState;
 
-@interface AdministrationFlow : UIViewController<UITableViewDataSource, UITableViewDelegate>
+@interface AdministrationView : UIViewController<UITableViewDataSource, UITableViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 @property(strong) NSMutableArray *drinksStringArray;

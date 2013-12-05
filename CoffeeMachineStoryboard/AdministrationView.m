@@ -6,18 +6,18 @@
 //  Copyright (c) 2013 graci. All rights reserved.
 //
 
-#import "AdministrationFlow.h"
+#import "AdministrationView.h"
 #import "DrinksTableView.h"
 #import "Theme.h"
 
 #define PLIST_URL       @"https://raw.github.com/AndreyNikolaev/CoffeeMachineIOS/master/CoffeeMachine/sourceFile.plist"
 #define PLIST_FILENAME  @"writedFile.plist"
 
-@interface AdministrationFlow ()
+@interface AdministrationView ()
 
 @end
 
-@implementation AdministrationFlow
+@implementation AdministrationView
 
 - (void)viewDidLoad
 {

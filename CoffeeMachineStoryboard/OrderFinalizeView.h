@@ -12,7 +12,7 @@
 @class MoneyAmount;
 @class CoffeeMachineState;
 
-@interface OrderFinalizeFlow : UIViewController
+@interface OrderFinalizeView : UIViewController
 
 @property (strong, nonatomic) IBOutlet UILabel *changeLbl;
 @property (strong, nonatomic) IBOutlet UIImageView *backImageView;
