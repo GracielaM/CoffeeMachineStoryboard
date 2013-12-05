@@ -15,7 +15,7 @@
 @class Drink;
 @class MoneyAmount;
 
-@interface PaymentFlow : UIViewController 
+@interface PaymentView : UIViewController 
 
 @property (strong) CoffeeMachineState *coffeeMachineState;
 @property (strong) Drink *selectedDrink;

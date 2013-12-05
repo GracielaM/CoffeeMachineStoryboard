@@ -7,12 +7,12 @@
 //
 
 #import "DrinksTableView.h"
-#import "PaymentFlow.h"
+#import "PaymentView.h"
 #import "Drink.h"
 #import "DrinksContainer.h"
 #import "CoffeeMachineState.h"
 #import "MoneyAmount.h"
-#import "AdministrationFlow.h"
+#import "AdministrationView.h"
 #import "Theme.h"
 
 @interface DrinksTableView ()
@@ -46,12 +46,12 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"MySegue"]) {
-        AdministrationFlow *admin = (AdministrationFlow *)[segue destinationViewController];
+        AdministrationView *admin = (AdministrationView *)[segue destinationViewController];
         admin.coffeeMachineState = self.coffeeMachineState;
     }
     if ([[segue identifier] isEqualToString:@"DrinksToPayment"]) {
         
-        PaymentFlow *paymentFlow = (PaymentFlow *)[segue destinationViewController];
+        PaymentView *paymentFlow = (PaymentView *)[segue destinationViewController];
         paymentFlow.coffeeMachineState = _coffeeMachineState;
         paymentFlow.selectedDrink = self.selectedDrink;
         paymentFlow.title = [self.selectedDrink description];

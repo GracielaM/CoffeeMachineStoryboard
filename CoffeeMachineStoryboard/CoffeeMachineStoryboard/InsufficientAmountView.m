@@ -6,15 +6,15 @@
 //  Copyright (c) 2013 graci. All rights reserved.
 //
 
-#import "InsufficientAmountFlow.h"
-#import "OrderFinalizeFlow.h"
+#import "InsufficientAmountView.h"
+#import "OrderFinalizeView.h"
 #import "DrinksTableView.h"
 #import "Theme.h"
-@interface InsufficientAmountFlow ()
+@interface InsufficientAmountView ()
 
 @end
 
-@implementation InsufficientAmountFlow
+@implementation InsufficientAmountView
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -52,7 +52,7 @@
 {
     if ([[segue identifier] isEqualToString:@"InsufficientToFinalizeView"])
     {
-        OrderFinalizeFlow *order = (OrderFinalizeFlow *)[segue destinationViewController];
+        OrderFinalizeView *order = (OrderFinalizeView *)[segue destinationViewController];
         order.coffeeMachineState = self.coffeeMachineState;
         order.selectedDrink = self.selectedDrink;
         order.change = self.change;

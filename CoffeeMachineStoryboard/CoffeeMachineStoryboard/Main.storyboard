@@ -53,10 +53,10 @@
             </objects>
             <point key="canvasLocation" x="795" y="-496"/>
         </scene>
-        <!--Administration Flow-->
+        <!--Administration View-->
         <scene sceneID="K0B-7y-qiZ">
             <objects>
-                <viewController id="P3w-cQ-7EE" customClass="AdministrationFlow" sceneMemberID="viewController">
+                <viewController id="P3w-cQ-7EE" customClass="AdministrationView" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="S54-W2-shR"/>
                         <viewControllerLayoutGuide type="bottom" id="dxe-OT-qc3"/>
@@ -99,10 +99,10 @@
             </objects>
             <point key="canvasLocation" x="1565" y="-749"/>
         </scene>
-        <!--Insufficient Amount Flow-->
+        <!--Insufficient Amount View-->
         <scene sceneID="PCj-W7-FEU">
             <objects>
-                <viewController id="Dpm-O9-e8O" customClass="InsufficientAmountFlow" sceneMemberID="viewController">
+                <viewController id="Dpm-O9-e8O" customClass="InsufficientAmountView" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oAm-f2-d1t"/>
                         <viewControllerLayoutGuide type="bottom" id="CfC-GT-cpI"/>
@@ -163,10 +163,10 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XqP-H2-XC4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--Payment Flow-->
+        <!--Payment View-->
         <scene sceneID="GxW-xE-VOk">
             <objects>
-                <viewController id="SrX-Cd-OVX" customClass="PaymentFlow" sceneMemberID="viewController">
+                <viewController id="SrX-Cd-OVX" customClass="PaymentView" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9hG-lz-gsD"/>
                         <viewControllerLayoutGuide type="bottom" id="KHD-EW-YcO"/>
@@ -337,10 +337,10 @@
             </objects>
             <point key="canvasLocation" x="1206" y="478"/>
         </scene>
-        <!--Order Finalize Flow-->
+        <!--Order Finalize View-->
         <scene sceneID="pXW-a5-noZ">
             <objects>
-                <viewController id="9aK-xP-s6M" customClass="OrderFinalizeFlow" sceneMemberID="viewController">
+                <viewController id="9aK-xP-s6M" customClass="OrderFinalizeView" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Zf3-Ad-K5A"/>
                         <viewControllerLayoutGuide type="bottom" id="US5-bh-lm1"/>
